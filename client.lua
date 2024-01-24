@@ -1,7 +1,7 @@
 -- Sağ tık tuşuna basılı tuttuğunuzda iç kamera modunu etkinleştirme veya devre dışı bırakma
-Citizen.CreateThread(function()
+CreateThread(function()
     while true do
-        Citizen.Wait(0)
+       Wait(0)
         if IsControlPressed(0, 25) then -- 25 sağ tık tuşunun kontrol kodu
             if not isInVehicleCamMode then
                 isInVehicleCamMode = true
