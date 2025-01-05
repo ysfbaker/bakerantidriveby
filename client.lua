@@ -1,7 +1,7 @@
 CreateThread(function()
     while true do
        Wait(0)
-        if IsControlPressed(0, 25) then -- 25 sağ tık
+        if IsControlPressed(0, 25) then 
             if not isInVehicleCamMode then
                 isInVehicleCamMode = true
                 SetFollowVehicleCamViewMode(4)
